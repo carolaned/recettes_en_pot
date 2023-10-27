@@ -1,0 +1,29 @@
+/* ==========================================================================
+   BODY / ELEMENT
+   Le body permet d'initialiser les propriétés générales de la page.
+   Les éléments de la page vont hérités des propriétés inscrite dans body
+   ========================================================================== */
+
+body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-content);
+    color: var(--color-black);
+    line-height: 1.6;
+    background: var(--color-neutral-light);
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 0.9rem;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+        font-size: 0.8rem;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+}

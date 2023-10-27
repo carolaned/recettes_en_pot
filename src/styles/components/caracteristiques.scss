@@ -1,0 +1,94 @@
+.caracteristiques {
+    padding: 150px 0;
+    background-color: var(--color-neutral-dark);
+
+    .wrapper {
+        position: relative;
+    }
+
+    .container {
+        overflow: hidden;
+    }
+
+    .caracteristiques__cards {
+        margin-top: 50px;
+        display: flex;
+    }
+    .card {
+        background-color: var(--color-neutral-light);
+        padding: 112px 20px 20px 20px;
+        border-radius: 4px;
+        width: 358px;
+    }
+
+    .swiper-wrapper {
+        box-sizing: border-box;
+    }
+
+    .swiper-container {
+        position: relative;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        font-size: 4.375rem;
+        position: absolute;
+        z-index: 1;
+        top: 190px;
+        cursor: pointer;
+    }
+
+    .swiper-button-prev {
+        left: -100px;
+    }
+
+    .swiper-button-next {
+        right: -100px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 60px 0;
+        .container {
+            max-width: 600px;
+            margin: 0 40px;
+        }
+
+        .card {
+            padding: 80px 20px 20px 20px;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            font-size: 3rem;
+            top: 160px;
+        }
+
+        .swiper-button-prev {
+            left: -25px;
+        }
+
+        .swiper-button-next {
+            right: -25px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 40px 0;
+
+        .card {
+            padding: 40px 20px 20px 20px;
+        }
+
+        .container {
+            margin: 0 20px;
+        }
+        .caracteristiques__cards {
+            margin-top: 20px;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            font-size: 2rem;
+            top: 110px;
+        }
+    }
+}

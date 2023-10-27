@@ -1,0 +1,175 @@
+{% include '_partials/_header.html' with { title: 'Form' } %}
+<section class="formulaire">
+    <div class="wrapper">
+        <div class="contenu">
+            <h2>Formulaire</h2>
+            <form action="">
+                <div class="form__body">
+                    <div class="perso">
+                        <h5>Personnel</h5>
+                        <fieldset class="container">
+                            <div class="input">
+                                <label class="input__label" for="firstname">Prénom</label>
+                                <input
+                                    class="input__element"
+                                    type="text"
+                                    name="firstname"
+                                    id="firstname"
+                                    placeholder=""
+                                    required
+                                />
+                            </div>
+                            <div class="input">
+                                <label class="input__label" for="name">Nom</label>
+                                <input
+                                    class="input__element"
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder=""
+                                    required
+                                />
+                            </div>
+                            <div class="input">
+                                <label class="input__label" for="email">Courriel</label>
+                                <input
+                                    class="input__element"
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder=""
+                                    required
+                                />
+                            </div>
+                            <div class="input">
+                                <label class="input__label" for="phone">Numéro de téléphone</label>
+                                <input
+                                    class="input__element"
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder=""
+                                    required
+                                />
+                            </div>
+                            <div class="methode_contact" data-imput-container="">
+                                <p>Me joindre par :</p>
+                                <div class="input radio">
+                                    <input
+                                        class="input__element"
+                                        type="radio"
+                                        name="communication[]"
+                                        id="option1"
+                                        value="courriel"
+                                        required
+                                    />
+                                    <label class="input__label" for="option1">Courriel</label>
+                                </div>
+                                <div class="input radio">
+                                    <input
+                                        class="input__element"
+                                        type="radio"
+                                        name="communication[]"
+                                        id="option2"
+                                        value="telephone"
+                                        required
+                                    />
+                                    <label class="input__label" for="option2">Téléphone</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="organisation">
+                        <h5>Organisation</h5>
+                        <fieldset class="container">
+                            <div class="input">
+                                <label class="input__label" for="org">Nom de l'organisation</label>
+                                <input class="input__element" type="text" name="org" id="org" placeholder="" required />
+                            </div>
+                            <div class="input select">
+                                <label class="input__label" for="type">Type d'organisation</label>
+                                <select class="input__element" name="type" id="type" required>
+                                    <option value="" hidden>-Selectionner-</option>
+                                    <option value="qc">Québec</option>
+                                    <option value="on">Ontario</option>
+                                    <option value="al">Alberta</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="campagne">
+                        <h5>Campagne</h5>
+                        <fieldset class="container">
+                            <div class="infos_campagne">
+                                <div class="input">
+                                    <label class="input__label" for="montant">Montant visé</label>
+                                    <input
+                                        class="input__element"
+                                        type="number"
+                                        name=""
+                                        id="montant"
+                                        placeholder="0,00$"
+                                        min="0"
+                                        step="0.01"
+                                        required
+                                    />
+                                </div>
+                                <div class="input">
+                                    <label class="input__label" for="name">Durée de la campagne</label>
+                                    <input
+                                        class="input__element"
+                                        type="text"
+                                        name=""
+                                        id="name"
+                                        placeholder=""
+                                        required
+                                    />
+                                </div>
+                                <div class="input">
+                                    <label class="input__label" for="debut">Date de début</label>
+                                    <input
+                                        class="input__element"
+                                        type="date"
+                                        name=""
+                                        id="debut"
+                                        placeholder="jj/mm/aaaa"
+                                        required
+                                    />
+                                </div>
+                                <div class="input">
+                                    <label class="input__label" for="fin">Date de fin</label>
+                                    <input
+                                        class="input__element"
+                                        type="date"
+                                        name=""
+                                        id="fin"
+                                        placeholder="jj/mm/aaaa"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="input textarea u-grid-fullwidth">
+                                <label class="input__label" for="comment">Description <span>(facultatif)</span></label>
+                                <textarea class="input__element" name="comment" id="comment"></textarea>
+                            </div>
+                            <div class="input checkbox">
+                                <input class="input__element" type="checkbox" name="optin[]" id="optin" value="true" />
+                                <label class="input__label" for="optin">J'accepte les termes et conditions</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <footer class="form__footer">
+                        <button class="button">Envoyer</button>
+                    </footer>
+                </div>
+
+                <div class="form__confirmation">
+                    <h2>Merci</h2>
+                    <p>Votre formulaire a été envoyé.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <img class="bg-img" src="assets/images/bg-formulaire.jpg" alt="" />
+</section>
+{% include '_partials/_footer.html' %}

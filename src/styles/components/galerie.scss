@@ -1,0 +1,74 @@
+.galerie {
+    padding: 215px 0 150px 0;
+    position: relative;
+    .grid {
+        display: grid;
+        gap: 30px;
+        grid-auto-flow: dense;
+
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+    .card--xs {
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    .card--sm {
+        grid-column: span 4;
+        grid-row: span 6;
+    }
+    .card--md {
+        grid-column: span 5;
+        grid-row: span 5;
+    }
+    .card--xl {
+        grid-column: span 6;
+        grid-row: span 10;
+    }
+
+    .wrapper::after {
+        position: absolute;
+        z-index: -1;
+        top: 150px;
+        left: 0;
+        content: '';
+        height: 216px;
+        width: 100vw;
+        background-color: var(--color-neutral-dark);
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 60px 0;
+
+        .grid {
+            gap: 20px;
+        }
+
+        .wrapper::after {
+            top: 80px;
+            height: 80px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 40px 0;
+
+        .grid {
+            gap: 10px;
+
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+
+        .wrapper::after {
+            top: 50px;
+        }
+    }
+}

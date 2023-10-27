@@ -1,0 +1,10 @@
+[data-scrolly='fromBack'] {
+    opacity: 0;
+    transition: all 1s ease-out;
+    transform: scale(0);
+
+    &.is-active {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

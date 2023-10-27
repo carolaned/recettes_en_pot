@@ -1,0 +1,26 @@
+.top_bar {
+    background-color: var(--color-primary);
+    padding: 8px 0;
+    .wrapper {
+        max-width: 1760px;
+    }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        color: var(--color-white);
+        li {
+            font-family: var(--font-secondary);
+            font-weight: 300;
+            margin-left: 20px;
+        }
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        .wrapper {
+            max-width: 720px;
+        }
+    }
+}

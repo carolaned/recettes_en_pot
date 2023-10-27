@@ -1,0 +1,105 @@
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 60px 0;
+    .wrapper {
+        max-width: $breakpoint-lg;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 150px;
+
+        nav {
+            margin: 50px 0;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                margin: 0 15px;
+            }
+        }
+    }
+
+    .coordonnees {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        div {
+            display: flex;
+            margin: 9px 0;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        p {
+            max-width: 200px;
+        }
+    }
+
+    .coordonnees_tablette {
+        display: none;
+    }
+
+    .reseaux {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        li {
+            margin: 10px 0;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        .wrapper {
+            max-width: 668px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .center {
+            margin-right: 0;
+            margin-bottom: 20px;
+            nav {
+                margin: 20px 0;
+            }
+        }
+        .coordonnees {
+            display: none;
+        }
+        .coordonnees_tablette {
+            display: block;
+            max-width: 200px;
+            margin-right: 400px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        .wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .center {
+            margin-right: 0;
+            margin-bottom: 20px;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li {
+                    margin: 5px 0;
+                }
+            }
+        }
+        .coordonnees_tablette {
+            margin-right: 20px;
+        }
+    }
+}

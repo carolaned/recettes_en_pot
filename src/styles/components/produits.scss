@@ -1,0 +1,128 @@
+.produits {
+    padding: 150px 0;
+    background-color: var(--color-neutral-dark);
+
+    .produit__container {
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+        margin-top: 50px;
+    }
+    .produit {
+        background-color: var(--color-white);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 25%;
+        border-radius: 4px;
+        box-shadow: 0 4px 4px rgba($color: #202020, $alpha: 0.25);
+
+        .produit__contenu {
+            max-width: 345px;
+            padding: 20px;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .prix {
+                    font-family: var(--font-secondary);
+                    color: var(--color-tertiary);
+                    font-size: 1rem;
+                }
+                span {
+                    margin-left: 13px;
+                    font-family: var(--font-quaternary);
+                    color: #c7c7c7;
+                    text-decoration: line-through;
+                    font-size: 0.75rem;
+                }
+            }
+            p {
+                font-family: var(--font-quaternary);
+                font-size: 0.75rem;
+                font-weight: 500;
+                margin: 16px 0;
+            }
+            a {
+                padding: 8px 16px;
+                border-radius: 4px;
+                background-color: var(--color-quaternary);
+                text-transform: uppercase;
+                color: var(--color-white);
+            }
+        }
+    }
+    .icon_aime {
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        .icon_coeur {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            height: 1.4em;
+            width: 1.4em;
+            color: var(--color-white);
+        }
+
+        .icon_cercle {
+            height: 2.5em;
+            width: 2.5em;
+            color: var(--color-tertiary);
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 60px 0;
+
+        .produit__container {
+            flex-wrap: wrap;
+        }
+
+        .produit {
+            max-width: 40%;
+        }
+
+        .produit__contenu {
+            div {
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+            h6 {
+                height: 33px;
+            }
+            p {
+                max-height: 35px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 40px 0;
+
+        .produit__container {
+            margin-top: 20px;
+        }
+
+        .produit {
+            max-width: 100%;
+        }
+
+        .produit__contenu {
+            div {
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+            h6 {
+                height: auto;
+            }
+            p {
+                max-height: auto;
+            }
+        }
+    }
+}

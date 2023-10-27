@@ -1,0 +1,262 @@
+{% include '_partials/_header.html' with { title: 'Accueil' } %}
+
+<div class="container" data-component="Scrolly">
+    <section class="hero">
+        <div class="wrapper" data-scrolly="fromBack">
+            <div class="hero__contenu">
+                <img src="assets/images/muffin.jpg" alt="" />
+                <div class="contenu">
+                    <h1>Bienvenue chez Recettes en pot!</h1>
+                    <p>
+                        Recettes en pot propose des expériences culinaires conviviales et responsables grâce à des
+                        produits gastronomiques écologiques et conçus à la main par des artisans de l'économie sociale.
+                        En achetant des Recettes en pot vous contribuez à un modèle d'économie sociale porteur d'avenir.
+                    </p>
+                    <a href="formulaire.html" class="bouton" data-component="Modal" data-modal-id="tpl-modal"
+                        >Créer ma campagne</a
+                    >
+                </div>
+            </div>
+        </div>
+        <img class="bg-img" src="assets/images/hero.jpg" alt="Hero" />
+    </section>
+    <section class="soutenir" data-scrolly="fromBack">
+        <div class="wrapper">
+            <h2>Soutenez nos artisans locaux</h2>
+            <div class="soutenir__cards">
+                <div class="card">
+                    <div class="hover">
+                        <h3>Campagnes</h3>
+                    </div>
+                    <img src="assets/images/campagne.jpg" alt="" />
+                </div>
+                <div class="card">
+                    <div class="hover">
+                        <h3>Boutique</h3>
+                    </div>
+                    <img src="assets/images/boutique.jpg" alt="" />
+                </div>
+                <div class="card">
+                    <div class="hover">
+                        <h3>Points de<br />vente</h3>
+                    </div>
+                    <img src="assets/images/pointvente.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="caracteristiques">
+        <div class="wrapper" data-scrolly="fromBack">
+            <h2>Caractéristiques</h2>
+            <div class="container">
+                <div class="swiper-container" data-component="Carousel">
+                    <div class="swiper-wrapper caracteristiques__cards">
+                        <div class="swiper-slide card">
+                            <h4>Écologique</h4>
+                            <p>En plus de combattre le gaspillage alimentaire, nos pots sont réutilisables.</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h4>Sauve-temps</h4>
+                            <p>Les recettes se préparent en moins de 5 minutes et facilitent la vie des gens.</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h4>Santé</h4>
+                            <p>Des ingrédients naturels et sains, qui contribuent aux bonnes habitudes.</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h4>Conçus à la main</h4>
+                            <p>Nos artisans de l'économie sociale créent chaque pot avec amour et fierté.</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h4>Économique</h4>
+                            <p>Des repas et collations prêts à cuisiner abordables, à moins de 1$ la portion.</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h4>Généreux</h4>
+                            <p>La vente des produits contribue à un modèle novateur d'économie circulaire.</p>
+                        </div>
+                    </div>
+                </div>
+                <svg class="icon swiper-button-prev">
+                    <use xlink:href="#icon-fleche_gauche"></use>
+                </svg>
+                <svg class="icon swiper-button-next">
+                    <use xlink:href="#icon-fleche_droite"></use>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section class="galerie" data-scrolly="fromBack">
+        <div class="wrapper">
+            <div class="grid">
+                <div class="card card--md"><img src="assets/images/img1.jpg" alt="" /></div>
+                <div class="card card--xl"><img src="assets/images/img2.jpg" alt="" /></div>
+                <div class="card card--md"><img src="assets/images/img3.jpg" alt="" /></div>
+                <div class="card card--xs"><img src="assets/images/img4.jpg" alt="" /></div>
+                <div class="card card--md"><img src="assets/images/img5.jpg" alt="" /></div>
+                <div class="card card--md"><img src="assets/images/img6.jpg" alt="" /></div>
+                <div class="card card--sm"><img src="assets/images/img7.jpg" alt="" /></div>
+            </div>
+        </div>
+    </section>
+    <section class="produits">
+        <div class="wrapper" data-scrolly="fromBack">
+            <h2>Nos produits</h2>
+            <div class="produit__container">
+                <div class="produit">
+                    <div class="icon_aime">
+                        <svg class="icon icon_cercle">
+                            <use xlink:href="#icon-coeur_cercle"></use>
+                        </svg>
+                        <svg class="icon icon_coeur icon--stroke">
+                            <use xlink:href="#icon-coeur2"></use>
+                        </svg>
+                    </div>
+                    <img src="assets/images/biscuitchoco.jpg" alt="" />
+                    <div class="produit__contenu">
+                        <h6>Biscuits double chocolat</h6>
+                        <p>Une belle farine à pâtisserie, avec du cacao foncé, de la cassonade tassée, ...</p>
+
+                        <div>
+                            <p class="prix">9,99$<span>11,99$</span></p>
+                            <a href="">Ajouter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit">
+                    <div class="icon_aime">
+                        <svg class="icon icon_cercle">
+                            <use xlink:href="#icon-coeur_cercle"></use>
+                        </svg>
+                        <svg class="icon icon_coeur icon--stroke">
+                            <use xlink:href="#icon-coeur2"></use>
+                        </svg>
+                    </div>
+                    <img src="assets/images/biscuitcoco.jpg" alt="" />
+                    <div class="produit__contenu">
+                        <h6>Biscuits chocolat noir et noix de coco</h6>
+                        <p>
+                            La farine douce et la cassonade créent le moelleux, mais c’est dans l’avoine et la noix ...
+                        </p>
+                        <div>
+                            <p class="prix">9,99$<span>11,99$</span></p>
+                            <a href="">Ajouter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit">
+                    <div class="icon_aime">
+                        <svg class="icon icon_cercle">
+                            <use xlink:href="#icon-coeur_cercle"></use>
+                        </svg>
+                        <svg class="icon icon_coeur icon--stroke">
+                            <use xlink:href="#icon-coeur2"></use>
+                        </svg>
+                    </div>
+                    <img src="assets/images/biscuitchoco.jpg" alt="" />
+                    <div class="produit__contenu">
+                        <h6>Biscuits double chocolat</h6>
+                        <p>Une belle farine à pâtisserie, avec du cacao foncé, de la cassonade tassée, ...</p>
+                        <div>
+                            <p class="prix">9,99$<span>11,99$</span></p>
+                            <a href="">Ajouter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit">
+                    <div class="icon_aime">
+                        <svg class="icon icon_cercle">
+                            <use xlink:href="#icon-coeur_cercle"></use>
+                        </svg>
+                        <svg class="icon icon_coeur icon--stroke">
+                            <use xlink:href="#icon-coeur2"></use>
+                        </svg>
+                    </div>
+                    <img src="assets/images/biscuitcoco.jpg" alt="" />
+                    <div class="produit__contenu">
+                        <h6>Biscuits chocolat noir et noix de coco</h6>
+                        <p>
+                            La farine douce et la cassonade créent le moelleux, mais c’est dans l’avoine et la noix ...
+                        </p>
+                        <div>
+                            <p class="prix">9,99$<span>11,99$</span></p>
+                            <a href="">Ajouter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" data-scrolly="fromBack">
+        <div class="wrapper">
+            <h2>Nos services</h2>
+            <div class="grid">
+                <div class="card">
+                    <h4>Campagne numérique</h4>
+                    <p>
+                        Sollicitez vos contributeurs par courriel et médias sociaux afin qu'ils commandent des produits
+                        sur votre boutique en ligne personnalisée, qui seront livré à domicile.
+                    </p>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="#icon-plus"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <h4>Campagne traditionnelle</h4>
+                    <p>
+                        Recueillez vos commandes à l'aide de bons vieux formulaires et soumettez-les par votre Tableau
+                        de bord, pour une livraison finale au point de chute.
+                    </p>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="#icon-plus"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <h4>Campagne hybride</h4>
+                    <p>
+                        Combinez les avantages de la boutique de vente en ligne et de la prise de commandes par
+                        formulaires.
+                    </p>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="#icon-plus"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <h4>vente directe</h4>
+                    <p>Commandez des produits pour les revendre directement à vos contributeurs.</p>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="#icon-plus"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div
+    class="snackbar"
+    data-component="Snackbar"
+    data-auto-hide="true"
+    data-delay="2000"
+    data-scroll-limit="0"
+    data-id="1"
+>
+    <div class="wrapper">
+        <p>Pour plus d'information, <a href="#">cliquer ici.</a></p>
+        <a href="#" class="btn-close js-close">
+            <svg class="icon icon--md">
+                <use xlink:href="#icon-plus"></use>
+            </svg>
+        </a>
+    </div>
+</div>
+
+{% include '_partials/_footer.html' %}

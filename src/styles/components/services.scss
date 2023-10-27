@@ -1,0 +1,63 @@
+.services {
+    padding: 150px 0;
+    .grid {
+        margin-top: 50px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .card {
+        position: relative;
+        background-color: var(--color-neutral-dark);
+        box-shadow: 0 4px 4px rgba($color: #202020, $alpha: 0.25);
+        border-radius: 4px;
+        padding: 40px;
+        p {
+            margin-top: 5px;
+            max-width: 570px;
+        }
+        svg {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            height: 2.5em;
+            width: 2.5em;
+            color: var(--color-secondary);
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 60px 0;
+
+        .card {
+            padding: 25px;
+
+            svg {
+                top: 25px;
+                right: 25px;
+                height: 2em;
+                width: 2em;
+            }
+
+            h4 {
+                max-width: 240px;
+            }
+
+            p {
+                max-width: 260px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        padding: 40px 0;
+
+        .grid {
+            margin-top: 20px;
+            gap: 20px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+}
